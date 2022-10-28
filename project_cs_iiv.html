@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Project showcasing Python client registration automation project, built by Adam Fox" />
+  <title>Python Client Registration Automation</title>
+  <link rel="icon" type="image/x-icon" href="media/af-favicon.png">
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm">
+    <a class="navbar-brand hover-stroke" href="index.html">Adam Fox Web Development</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></ul>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link hover-stroke" href="index.html">Home</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row content-box shadow p-3 mb-5">
+      <div class="col-md-10">
+        <h2>Python Client Registration Automation</h2>
+        <p>
+          About a year in to my journey of learning to code I became increasingly
+          aware that one of my main administration tasks in my role at NCVO could be automated.
+        </p>
+        <p>
+          The workflow for processing client registrations for <a href="https://iiv.investinginvolunteers.org.uk/" target="_blank">NCVO’s Investing in Volunteers</a>
+          quality standard was very admin-heavy, involving the transfer of client registration data between systems,
+          spreadsheets, contracts & templates. Each client registration would take around an hour to process.
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>The solution</h4>
+            <p>
+              I chose Python as the language to learn & write the automation script in, due to the large amount of documentation
+              available dedicated to working with Microsoft Office packages used in the workflow.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4>The workflow</h4>
+            <p>I split the current admin process down into 50 individual steps, to create a
+               workflow that I could automate. <a href="media/iiv/processing-iiv-sales-workflow.pdf" target="_blank">View a copy of this workflow</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="highlight-wrapper">
+    <div class="container">
+      <div class="row content-box shadow mb-5">
+        <div class="col">
+          <h2>Creating the script</h2>
+          <p>The script drew heavily on Python’s docx and openpyxl modules to interact with Microsoft Word & Excel documents.</p>
+          <p>The functions in these modules allowed me to break the Word & Excel sheets down into separate objects that can be accessed by the script.</p>
+          <p>
+            I created custom modules for each broad stage of the workflow, and started automating the workflow step by step,
+            moving the data submitted in a client's registation form into our monitoring documents, contracts and templates.
+          </p>
+          <div class="content-box--image-wrapper col-md-8" style="margin: 15px auto;">
+            <img src="media/iiv/shell-screenshot.png" alt="Screenshot of Python script in action">
+          </div>
+          <p>
+            A number of client-submitted variables needed checking & inserting manually into the script before it could run,
+            so I set these up as user inputs prompted by the Python IDLE shell at the start of the script.
+          </p>
+          <p><a href="https://github.com/adam-fox19/automated-iiv-python.git" target="_blank">View the final script.</a></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    <div class="container">
+      <div class="row content-box shadow mb-5">
+        <div class="col">
+          <h2>End result</h2>
+          <p>
+            I was delighted with the end result - the processing time for each registration had been cut down to around
+            5 minutes, including the user input at the beginning of the script.
+          </p>
+          <p>
+            Creating the automation required me to learn & research a range of programming techniques including regexes,
+            input validation, use of the command line, automated web browser searching, and plenty of hours on Stack Overflow!
+          </p>
+          <p>
+            Being able use my coding learning & experience to solve a real-world problem was eye-opening for me, and definitely
+            helped to push me closer to my decision to pursue a career in the field.
+          </p>
+        </div>
+      </div>
+  </div>
+    <!-- Bootstrap scripts -->
+    <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'></script>
+</body>
+</html>

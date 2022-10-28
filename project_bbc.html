@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project showcasing Mock up of the BBC Sport homepage in November 2019, built by Adam Fox" />
+  <title>BBC - Home</title>
+  <link rel="icon" href="media/bbc/bbc-favicon.ico">
+  <script src="https://kit.fontawesome.com/a4c765d0b7.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/bbc.css">
+  <!-- Bootstrap Javascript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--
+    | Header |
+  -->
+  <div class="container-fluid header-container">
+    <div class="row">
+      <nav class="navbar-expand">
+        <ul class="navbar-nav nav-fill w-100">
+          <li class="header-nav-logo">
+            <a href="#"><img src="media/bbc/bbc-logo.png" alt="BBC Logo"></a>
+          </li>
+          <li class="nav-item header-nav-username">
+            <a href="#" class="nav-link">
+              <i class="fas fa-user-circle header-navbar-icon"></i><span>Sign in</span>
+            </a>
+          </li>
+          <li class="nav-item header-nav-notification">
+            <a href="#" class="nav-link"><i class="fas fa-bell header-navbar-icon"></i></a>
+          </li>
+          <li class="nav-item header-nav-home">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item header-nav-news">
+            <a href="#" class="nav-link">News</a>
+          </li>
+          <li class="nav-item header-nav-sport">
+            <a href="#" class="nav-link">Sport</a>
+          </li>
+          <li class="nav-item header-nav-weather">
+            <a href="#" class="nav-link">Weather</a>
+          </li>
+          <li class="nav-item header-nav-iplayer">
+            <a href="#" class="nav-link">iPlayer</a>
+          </li>
+          <li class="nav-item header-nav-sounds">
+            <a href="#" class="nav-link">Sounds</a>
+          </li>
+          <li class="nav-item header-nav-cbbc">
+            <a href="#" class="nav-link">CBBC</a>
+          </li>
+          <li class="nav-item header-nav-more">
+            <a href="#header-collapse-more-container" class="nav-link dropdown-toggle" data-toggle="collapse">More</a>
+          </li>
+          <li class="header-nav-search">
+            <input type="text" placeholder="Search">
+            <span><i class="header-navbar-icon fas fa-search"></i></span>
+          </li>
+          <li class="nav-item header-nav-search-sm-display">
+            <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+    <div class="container-fluid collapse" id="header-collapse-more-container">
+      <div class="row">
+        <span class="col-1 header-collapse-more-left">MORE</span>
+        <div class="col-10 header-collapse-main-col">
+          <ul class="header-collapse-more-list">
+            <li class="header-collapse-more-sm-display">
+              <span>MORE</span>
+            </li>
+            <a class="header-collapse-more-weather" href="#"><li>Weather</li></a>
+            <a class="header-collapse-more-iplayer" href="#"><li>iPlayer</li></a>
+            <a class="header-collapse-more-sounds" href="#"><li>Sounds</li></a>
+            <a class="header-collapse-more-cbbc" href="#"><li>CBBC</li></a>
+            <a href="#"><li>CBeebies</li></a>
+            <a href="#"><li>Food</li></a>
+            <a href="#"><li>Bitesize</li></a>
+            <a href="#"><li>Arts</li></a>
+            <a href="#"><li>Taster</li> </a>
+            <a href="#"><li>Local</li></a>
+            <a href="#"><li>TV</li></a>
+            <a href="#"><li>Radio</li></a>
+            <a href="#"><li>Three</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  <!--
+    | Yellow title section |
+  -->
+  <div class="container-fluid yellow-title-container">
+    <div class="row">
+      <h1><a href="#">SPORT</a></h1>
+      <!-- Button only displays at small breakpoint & below -->
+        <button class="all-sport-toggler-sm navbar-toggler" type="button" data-toggle="collapse" data-target="#all-sport-dropdown">
+          <i class="fas fa-bars"></i>
+          <span class="all-sport-toggler-span">All Sport</span>
+        </button>
+    </div>
+  </div>
+
+  <!--
+    | Yellow all sport nav section |
+  -->
+  <div class="container-fluid yellow-nav-container">
+    <div class="row">
+      <ul class="nav">
+        <li class="all-sport-nav-home">
+          <span class="nav-link"><a href="#">Home</a></span>
+        </li>
+        <li>
+          <span class="nav-link"><a href="#">Football</a></span>
+        </li>
+        <li>
+          <span class="nav-link"><a href="#">Formula 1</a></span>
+        </li>
+        <li>
+          <span class="nav-link"><a href="#">Cricket</a></span>
+        </li>
+        <li>
+          <span class="nav-link"><a href="#">Rugby U</a></span>
+        </li>
+        <li>
+          <span class="nav-link"><a href="#">Rugby L</a></span>
+        </li>
+        <li>
+          <span class="nav-link"><a href="#">Tennis</a></span>
+        </li>
+        <li class="all-sport-nav-golf">
+          <span class="nav-link"><a href="#">Golf</a></span>
+        </li>
+        <li class="all-sport-nav-athletics">
+          <span class="nav-link"><a href="#">Athletics</a></span>
+        </li>
+        <li class="all-sport-nav-my-sport">
+          <span class="nav-link"><a href="#">My Sport</a></span>
+        </li>
+        <li>
+          <div class="all-sport-toggler-div">
+            <button class="navbar-toggler all-sport-toggler-lg" type="button" data-toggle="collapse" data-target="#all-sport-dropdown" aria-expanded="false">
+              <i class="fas fa-bars"></i>
+              <span class="all-sport-toggler-span">All Sport</span>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--
+    | Yellow all sport nav section collapsed content (all-sport-dropdown = asd) |
+  -->
+    <div class="container-fluid collapse navbar-collapse" id="all-sport-dropdown">
+      <div class="row asd-list-wrapper">
+        <!-- asd-list-sm only displays from 600px & below -->
+        <ul class="asd-list asd-list-sm">
+          <a href="#"><li class="asd-list-sm-home">Home</li></a>
+          <a href="#"><li>Football</li></a>
+          <a href="#"><li>Formula 1</li></a>
+          <a href="#"><li>Cricket</li></a>
+          <a href="#"><li>Rugby U</li></a>
+          <a href="#"><li>Rugby L</li></a>
+          <a href="#"><li>Tennis</li></a>
+          <a href="#"><li>Golf</li></a>
+          <a href="#"><li>Athletics</li></a>
+          <a href="#"><li>My Sport</li></a>
+        </ul>
+          <!-- a-z-sport-span only displays from 600px & below -->
+          <span class="a-z-sport-span">A-Z Sports</span>
+        <ul class="asd-list asd-list-higher">
+          <a href="#"><li>American Football</li></a>
+          <a href="#"><li>Athletics</li></a>
+          <a href="#"><li>Basketball</li></a>
+          <a href="#"><li>Boxing</li></a>
+          <a href="#"><li>Cricket</li></a>
+          <a href="#"><li>Cycling</li></a>
+          <a href="#"><li>Darts</li></a>
+          <a href="#"><li>Disability Sport</li></a>
+          <a href="#"><li>Football</li></a>
+          <a href="#"><li>Formula 1</li></a>
+          <a href="#"><li>Gaelic Games</li></a>
+          <a href="#"><li>Get Inspired</li></a>
+          <a href="#"><li>Golf</li></a>
+          <a class="no-border-right-sm" href="#"><li>Gymnastics</li></a>
+          <a class="no-border-right-sm" href="#"><li>Horse Racing</li></a>
+          <a class="no-border-right-sm" href="#"><li>Mixed Martial Arts</li></a>
+          <a class="no-border-right-sm" href="#"><li>Motorsport</li></a>
+          <a class="no-border-right-sm" href="#"><li>Netball</li></a>
+          <a class="no-border-right-md" href="#"><li>Olympic Sports</li></a>
+          <a class="no-border-right-md" href="#"><li>Rugby League</li></a>
+          <a class="no-border-right-md" href="#"><li>Rugby Union</li></a>
+          <a class="no-border-right-xl" href="#"><li>Snooker</li></a>
+          <a class="no-border-right-xl" href="#"><li>Swimming</li></a>
+          <a class="no-border-right-xl" href="#"><li>Tennis</li></a>
+          <a class="no-border-right" href="#"><li>Winter Sports</li></a>
+          <a class="no-border-right" href="#"><li>Full Sports A-Z</li></a>
+        </ul>
+      </div>
+      <div class="row">
+        <span class="more-from-sport-span">More from Sport</span>
+      </div>
+      <div class="row">
+        <ul class="asd-list asd-list-lower">
+          <a href="#"><li>England</li></a>
+          <a href="#"><li>Scotland</li></a>
+          <a href="#"><li>Wales</li></a>
+          <a href="#"><li>Northern Ireland</li></a>
+          <a href="#"><li>Match of the Day</li></a>
+          <a class="no-border-right-md" href="#"><li>5 Live Sport</li></a>
+          <a class="no-border-right-md" href="#"><li>Sports Personality</li></a>
+          <a class="no-border-right-md" href="#"><li>Sport on the BBC</li></a>
+          <a class="no-border-right" href="#"><li>News Feeds</li></a>
+          <a id="no-border-bottom-sm" class="no-border-right" href="#"><li>Help & FAQs</li></a>
+        </ul>
+      </div>
+    </div>
+
+  <!--
+    | Main section |
+  -->
+  <!-- Container & row for all content except footer and war of the worlds content -->
+  <div class="container-fluid main-container">
+    <div class="row">
+
+      <!--
+        | Main section - left column (first) |
+      -->
+      <div class="col-lg-9 col-md-12">
+        <div class="row sm-breakpoint-up-margin-bottom">
+
+          <!--
+            | Main section - left column - headline article |
+          -->
+          <div class="col-lg-6 col-sm-8 headline-image-wrapper">
+            <a href="#" class="div-anchor"></a>
+            <img class="headline-article-image" src="media/bbc/liv.jpg" alt="liverpool player firmino">
+          </div>
+          <div class="col-lg-3 col-sm-4 headline-article">
+            <h5 class="headline-heading">Liverpool to play twice within 24 hours in EFL Cup & Club World Cup</h5>
+            <p>Liverpool will field two different teams in as many days in order to fulfil fixtures in the EFL Cup and Fifa Club World Cup.</p>
+            <div class="article-box-footer">
+              <span class="footer-green"><a href="#">Football</a></span>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+
+          <!--
+            | Main section - left column - second headline article |
+          -->
+          <!-- only displays from above lg breakpoint -->
+          <div class="col-lg-3 col-md-4 second-headline-box lg-breakpoint-below-hide">
+            <img src="media/bbc/son.jpg" alt="Tottenham player Son">
+            <h6>Spurs forward Son's red card overturned</h6>
+            <div class="article-box-footer">
+                <span class="footer-border"><i class="far fa-clock"></i>10h</span>
+                <span class="footer-green footer-border"><a href="#">Football</a></span>
+                <span><i class="fas fa-comment-alt"></i>436</span>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+
+          <!--
+            | Main section - left column - standard articles |
+          -->
+          <!-- Only displays from below lg breakpoint -->
+          <div class="col-lg-3 col-sm-4 article-box lg-breakpoint-up-hide extra-padding-top">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/son.jpg" alt="Tottenham player Son">
+              </div>
+              <div class="col-sm-12 col-6">
+                <a href="#">
+                  <h6>Spurs forward Son's red card overturned</h6>
+                </a>
+                <div class="article-box-footer">
+                    <span class="footer-border"><i class="far fa-clock"></i>10h</span>
+                    <span class="footer-green footer-border"><a href="#">Football</a></span>
+                    <span><i class="fas fa-comment-alt"></i>436</span>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 article-box extra-padding-top">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/adams.jpg" alt="British boxer Nicola Adams">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>'I tore the pupil in my eye' - Adams on decision to retire</h6>
+                <div class="article-box-footer">
+                    <span class="footer-border"><i class="far fa-clock"></i>18h</span>
+                    <span class="footer-green footer-border"><a href="#">Boxing</a></span>
+                    <span><i class="fas fa-comment-alt"></i>120</span>
+                </div>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 article-box extra-padding-top">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/son2.jpg" alt="Tottenham player Son">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Son 'really sorry' for Gomes incident</h6>
+                <div class="article-box-footer">
+                    <span class="footer-border"><i class="far fa-clock"></i>11h</span>
+                    <span class="footer-green footer-border"><a href="#">Football</a></span>
+                    <span><i class="fas fa-comment-alt"></i>250</span>
+                </div>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 article-box extra-padding-top-lg-up">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/netball.jpg" alt="English women's netball player">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>England name South Africa tour squad</h6>
+                <div class="article-box-footer">
+                    <span class="footer-border"><i class="far fa-clock"></i>22h</span>
+                    <span class="footer-green footer-border"><a href="#">Netball</a></span>
+                    <span><i class="fas fa-comment-alt"></i>45</span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+          <div class="col-lg-3 col-sm-4 article-box extra-padding-top-lg-up">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/rugby.jpg" alt="Rugby manager Warren Gatland">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>'Salary breaches could bankrupt rugby'</h6>
+                <div class="article-box-footer">
+                    <span class="footer-border"><i class="far fa-clock"></i>13h</span>
+                    <span class="footer-green footer-border"><a href="#">Rugby Union</a></span>
+                    <span><i class="fas fa-comment-alt"></i>620</span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+          <div class="col-lg-3 col-sm-4 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/athletics.jpg" alt="Athlete with USA flag">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>200m cut from 'core' Diamond League list</h6>
+                <div class="article-box-footer">
+                    <span class="footer-border"><i class="far fa-clock"></i>15h</span>
+                    <span class="footer-green footer-border"><a href="#">Athletics</a></span>
+                    <span><i class="fas fa-comment-alt"></i>227</span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+          <div class="col-lg-3 col-sm-4 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/danny-care.jpg" alt="Rugby player Danny Care">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Stick Sarries in Championship - Care</h6>
+                <div class="article-box-footer">
+                    <span class="footer-border"><i class="far fa-clock"></i>2h</span>
+                    <span class="footer-green"><a href="#">Rugby Union</a></span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+          <div class="col-lg-3 col-sm-4 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/wenger.jpg" alt="Arsene Wenger">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Wenger: 'I haven't talked with Bayern'</h6>
+                <div class="article-box-footer">
+                    <span class="footer-border"><i class="far fa-clock"></i>5h</span>
+                    <span class="footer-green"><a href="#">European Football</a></span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+          <div class="col-lg-3 col-sm-4 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/scottish-rugby.jpg" alt="rugby match">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Scottish Rugby fined £70K for World Cup complaint</h6>
+                <div class="article-box-footer">
+                    <span class="footer-border"><i class="far fa-clock"></i>13h</span>
+                    <span class="footer-green footer-border"><a href="#">Rugby Union</a></span>
+                    <span><i class="fas fa-comment-alt"></i>268</span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+          <div class="col-lg-3 col-sm-4 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/kenny.jpg" alt="Cyclist Kenny in helmet">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Kenny aims for Olympic Qualification</h6>
+                <div class="article-box-footer">
+                    <span class="footer-border"><i class="far fa-clock"></i>8h</span>
+                    <span class="footer-green"><a href="#">Cycling</a></span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+          <div class="col-lg-3 col-sm-4 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/maynard.jpg" alt="Cricket coach Maynard">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Maynard retains Glamorgan coaching job</h6>
+                <div class="article-box-footer">
+                    <span class="footer-border"><i class="far fa-clock"></i>23h</span>
+                    <span class="footer-green"><a href="#">Cricket</a></span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+          <div class="col-lg-3 col-sm-4 article-box">
+            <div class="row sm-breakpoint-below-padding-bottom">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/breaking.jpg" alt="Breaking news alert">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Maddison in England squad for qualifiers</h6>
+                <div class="article-box-footer">
+                    <span class="footer-border"><i class="far fa-clock"></i>14m</span>
+                    <span class="footer-green footer-border"><a href="#">Football</a></span>
+                    <i class="fas fa-comment-alt"></i>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+          <div class="col-lg-3 col-sm-4 article-box lg-breakpoint-below-hide">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/boxing2.jpg" alt="Boxer arms outstretched">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Inoue beats Donaire to win thrilling super series final</h6>
+                <div class="article-box-footer">
+                    <span class="footer-border"><i class="far fa-clock"></i>13h</span>
+                    <span class="footer-green"><a href="#">Boxing</a></span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+        </div>
+        <hr class="sm-breakpoint-below-hide">
+
+        <!--
+          Main section - left column - standard articles in separate row
+        -->
+        <div class="row four-box-row sm-breakpoint-up-margin-bottom">
+          <div class="col-sm-3 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/davis-cup.jpg" alt="Davis Cup Tennis team">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>'Innovation or sacrilege? What you need to know about the new Davis Cup'</h6>
+                <div class="article-box-footer">
+                    <span class="footer-green footer-border"><a href="#">Tennis</a></span>
+                    <span><i class="fas fa-comment-alt"></i>48</span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+          <div class="col-sm-3 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/o-neill.jpg" alt="Northern Irish manager & footballer">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>New Stoke boss O'Neill has no fears over double job with N Ireland</h6>
+                <div class="article-box-footer">
+                    <span class="footer-green"><a href="#">Northern Ireland</a></span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+          <div class="col-sm-3 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/emily-smith.jpg" alt="Women's cricketers">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Hurricanes' Smith banned for posting team on Instagram</h6>
+                <div class="article-box-footer">
+                    <span class="footer-green footer-border"><a href="#">Women's Cricket</a></span>
+                    <span><i class="fas fa-comment-alt"></i>9</span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+          <div class="col-sm-3 article-box sm-breakpoint-below-no-border">
+            <div class="row sm-breakpoint-below-padding-bottom">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/francis.jpg" alt="Men's rugby players">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>'Wales prop Francis to miss start of Six Nations'</h6>
+                <div class="article-box-footer">
+                    <span class="footer-border"><i class="far fa-clock"></i>13h</span>
+                    <span class="footer-green"><a href="#">Rugby Union</a></span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="div-anchor"></a>
+          </div>
+        </div>
+        <hr class="sm-breakpoint-below-padding-bottom">
+
+        <!--
+          Main section - left column - large article & accompanying small articles (las-articles)
+          'More top stories' section
+        -->
+        <h2>More top stories</h2>
+        <div class="row">
+          <div class="col-xl-6 col-lg-12 las-articles-wrapper">
+            <div class="row">
+              <div class="col-xl-12 col-sm-6 atp-finals-image-wrapper">
+                <a href="#" class="div-anchor"></a>
+                <img src="media/bbc/atp-finals.jpg" alt="Tennis players holding trophies">
+              </div>
+              <div class="col-xl-12 col-sm-6 las-articles-headline-column atp-finals-text-wrapper">
+                <a href="#" class="div-anchor"></a>
+                <h5 class="atp-finals-headline">Who will win what in 2020? Becker and Henman's predictions</h5>
+                <p class="sm-breakpoint-below-hide">Boris Becker and Tim Henman pick their highlights of the year and make their tennis predictions for 2020.
+                  Who do they tip to win a grand slam?</p>
+                <div class="article-box-footer">
+                  <span class="footer-green"><a href="#">Tennis</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- las-small articles -->
+          <div class="col-xl-6 col-lg-12">
+            <div class="row margin-bottom-xl-up">
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/trump.jpg" alt="Snooker player Judd Trump">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>Trump beats O'Sullivan to retain Northern Ireland Open title</h6>
+                    <div class="article-box-footer">
+                        <span class="footer-green"><a href="#">Snooker<a/></span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/nfl.jpg" alt="American football player holding a ball">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>NFL week 11 - Wins for 49ers and Patriots after Ravens thrash Texans</h6>
+                    <div class="article-box-footer">
+                        <span class="footer-green"><a href="#">American Football<a/></span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/folau.jpg" alt="Rugby player in suit">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>Folau's bushfire comments 'appallingly insensitive'</h6>
+                    <div class="article-box-footer">
+                        <span class="footer-green"><a href="#">News<a/></span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+            </div>
+            <div class="row bottom-row-margin">
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/henry.jpg" alt="Thierry Henry">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>'You're going to fall - it's about how you get up' - Henry starts MLS job</h6>
+                    <div class="article-box-footer">
+                        <span class="footer-green"><a href="#">Football<a/></span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/tsitsipas.jpg" alt="Tennis player with greek flag">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>'I believe I'm close to being a Slam champion' - Tsitsipas after ATP finals win</h6>
+                    <div class="article-box-footer">
+                        <span class="footer-green"><a href="#">Tennis<a/></span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+              <div class="col-sm-4 small-article-box sm-breakpoint-below-no-border">
+                <div class="row sm-breakpoint-below-padding-bottom">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/gossip.jpg" alt="Sign displaying the word gossip">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>Today's football gossip</h6>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="sm-breakpoint-below-padding-bottom">
+      <!-- closing div for main section - left column (first) -->
+      </div>
+
+      <!--
+        | Main section - right column (first) |
+      -->
+
+      <!-- Main section - right column - football scores section -->
+      <div class="col-lg-3 col-md-12 main-right-col">
+        <h2 class="football-scores-heading">Football Scores</h2>
+        <div class="border-bottom">
+          <div class="football-scores-competition-title">
+            <h5><a href="#">Europa League</a></h5>
+          </div>
+          <button class="football-scores-more-dropdown dropdown-toggle navbar-toggler" type="button" data-toggle="collapse" data-target="#football-scores-dropdown" aria-expanded="false">
+            More
+          </button>
+        </div>
+
+        <!-- Football scores dropdown - collapsed content -->
+        <div class="collapse navbar-collapse" id="football-scores-dropdown">
+            <ul class="football-scores-list">
+              <a href="#"><li class="active-gray">Europa League</li></a>
+              <a href="#"><li>Premier League</li></a>
+              <a href="#"><li>Champions League</li></a>
+              <a href="#"><li>Scottish Prem</li></a>
+              <a href="#"><li>Championship</li></a>
+              <a href="#"><li>League One</li></a>
+              <a href="#"><li>League Two</li></a>
+              <a href="#"><li>Women's Super League</li></a>
+              <a href="#"><li>FA Cup</li></a>
+              <a href="#"><li>Scottish Cup</li></a>
+              <a href="#"><li>Scottish Champ</li></a>
+              <a href="#"><li>Scottish League One</li></a>
+              <a href="#"><li>Scottish League Two</li></a>
+              <a href="#"><li>Women Champs Lge</li></a>
+              <a href="#"><li>EFL Trophy</li></a>
+              <a href="#"><li>EFL Cup</li></a>
+              <a href="#"><li>Scottish League Cup</li></a>
+              <a href="#"><li>Women's Championship</li></a>
+              <a href="#"><li>FA Women's League Cup</li></a>
+              <a href="#"><li>National League</li></a>
+              <a href="#"><li>View all leagues & cups</li></a>
+            </ul>
+        </div>
+        <!-- Football scores - fixture table -->
+        <p class="football-scores-fixtures-date">THURSDAY 7TH NOVEMBER 2019<p>
+        <div class="fixture-table">
+          <div class="fixture">
+            <a href="#" class="div-anchor"></a>
+            <p class="fixture-home-team">Celtic</p>
+            <span class="fixture-home-score">1</span><span class="fixture-away-score">0</span>
+            <p class="fixture-away-team">Lazio</p>
+            <span class="fixture-minutes-played">19 mins</span>
+          </div>
+          <div class="fixture">
+            <a href="#" class="div-anchor"></a>
+            <p class="fixture-home-team">Man United</p>
+            <span class="fixture-time">20:00</span>
+            <p class="fixture-away-team">Partisan Belgrade</p>
+          </div>
+          <div class="fixture">
+            <a href="#" class="div-anchor"></a>
+            <p class="fixture-home-team">Rangers</p>
+            <span class="fixture-time">20:00</span>
+            <p class="fixture-away-team">FC Porto</p>
+          </div>
+          <div class="fixture">
+            <a href="#" class="div-anchor"></a>
+            <p class="fixture-home-team">FC Astana</p>
+            <span class="fixture-home-score">0</span><span class="fixture-away-score">5</span>
+            <p class="fixture-away-team">AZ Alkmaar</p>
+            <span class="fixture-minutes-played">FT</span>
+          </div>
+          <div class="fixture">
+            <a href="#" class="div-anchor"></a>
+            <p class="fixture-home-team">Apoel Nicosia</p>
+            <span class="fixture-home-score">0</span><span class="fixture-away-score">1</span>
+            <p class="fixture-away-team">FK Qarabag</p>
+            <span class="fixture-minutes-played">34 mins</span>
+          </div>
+          <div class="fixture">
+            <a href="#" class="div-anchor"></a>
+            <p class="fixture-home-team">F91 Dudelange</p>
+            <span class="fixture-home-score">0</span><span class="fixture-away-score">3</span>
+            <p class="fixture-away-team">Sevilla</p>
+            <span class="fixture-minutes-played">34 mins</span>
+          </div>
+          <div class="fixture">
+            <a href="#" class="div-anchor"></a>
+            <p class="fixture-home-team">FC Copenhagen</p>
+            <span class="fixture-home-score">0</span><span class="fixture-away-score">3</span>
+            <p class="fixture-away-team">Dynamo Kiev</p>
+            <span class="fixture-minutes-played">33 mins</span>
+          </div>
+          <a href="#"><h6 class="fixtures-all-scores border-bottom">View all Europa League scores</h6></a>
+        </div>
+      <!-- Closing div for main section - right column - football scores section -->
+      </div>
+
+      <!--
+        | Main section - left column (second) |
+      -->
+      <div class="col-lg-9 col-md-12">
+        <!--
+          | Main section - left column (second) - more video section |
+        -->
+        <h2>More video</h2>
+        <div class="row four-box-row">
+          <div class="col-sm-3 article-box">
+            <a href="#" class="div-anchor"></a>
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <div class="image-wrapper">
+                  <a href="#" class="div-anchor"></a>
+                  <div class="play-icon-box">
+                    <a href="#" class="div-anchor"><i class="fas fa-play"></i></a>
+                  </div>
+                  <img src="media/bbc/rodri.jpg" alt="Footballers kicking ball">
+                </div>
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Watch: Spain's Rodri & Thiago show off long-range passing skills</h6>
+                <div class="article-box-footer">
+                    <span class="footer-green"><a href="#">Football<a/></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 article-box">
+            <a href="#" class="div-anchor"></a>
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <div class="image-wrapper">
+                  <a href="#" class="div-anchor"></a>
+                  <div class="play-icon-box">
+                    <a href="#" class="div-anchor"><i class="fas fa-play"></i></a>
+                  </div>
+                  <img src="media/bbc/nfl-watch.jpg" alt="American football match">
+                </div>
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Watch brilliant 101-yard touchdown in NFL plays of the week</h6>
+                <div class="article-box-footer">
+                    <span class="footer-green"><a href="#">American Football<a/></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 article-box">
+            <a href="#" class="div-anchor"></a>
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <div class="image-wrapper">
+                  <a href="#" class="div-anchor"></a>
+                  <div class="play-icon-box">
+                    <a href="#" class="div-anchor"><i class="fas fa-play"></i></a>
+                  </div>
+                  <img src="media/bbc/buatsi.jpg" alt="Boxer Buatsi talking">
+                </div>
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Buatsi on moving from Ghana & Mayweather's money advice</h6>
+                <div class="article-box-footer">
+                    <span class="footer-green"><a href="#">Boxing<a/></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 article-box sm-breakpoint-below-no-border">
+            <a href="#" class="div-anchor"></a>
+            <div class="row sm-breakpoint-below-padding-bottom">
+              <div class="col-sm-12 col-6">
+                <div class="image-wrapper">
+                  <a href="#" class="div-anchor"></a>
+                  <div class="play-icon-box">
+                    <a href="#" class="div-anchor"><i class="fas fa-play"></i></a>
+                  </div>
+                  <img src="media/bbc/lebron.jpg" alt="Basketball player Lebron James">
+                </div>
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>LeBron James slam dunk and other big plays from the NBA</h6>
+                <div class="article-box-footer">
+                    <span class="footer-green"><a href="#">Rugby Union<a/></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="sm-breakpoint-below-padding-bottom">
+        <!--
+          | Main section - left column (second) - most watched section |
+        -->
+        <h2>Most watched</h2>
+        <div class="row four-box-row">
+          <div class="col-sm-3 article-box">
+            <a href="#" class="div-anchor"></a>
+            <span class="most-watched-number">1</span>
+            <h6 class="most-watched-text"><i class="fas fa-play"></i>Watch: Spain's Rodri & Thiago show off long-range passing skills</h6>
+          </div>
+          <div class="col-sm-3 article-box">
+            <a href="#" class="div-anchor"></a>
+            <span class="most-watched-number">2</span>
+            <h6 class="most-watched-text"><i class="fas fa-play"></i>Watch brilliant 101-yard touchdown in NFL plays of the week</h6>
+          </div>
+          <div class="col-sm-3 article-box">
+            <a href="#" class="div-anchor"></a>
+            <span class="most-watched-number">3</span>
+            <h6 class="most-watched-text"><i class="fas fa-play"></i>Buatsi on moving from Ghana & Mayweather's money advice</h6>
+          </div>
+          <div class="col-sm-3 article-box sm-breakpoint-below-no-border">
+            <a href="#" class="div-anchor"></a>
+            <span class="most-watched-number">4</span>
+            <h6 class="most-watched-text"><i class="fas fa-play"></i>LeBron James slam dunk and other big plays from the NBA</h6>
+          </div>
+        </div>
+        <hr>
+        <!--
+          | Main section - left column (second) - also in sport section |
+        -->
+        <h2>Also in sport</h2>
+        <div class="row four-box-row">
+          <div class="col-sm-3 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/dubois.jpg" alt="Boxer Dubois holding up glovee">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Fight Talk: Will Dubois be a world champion in 2020?</h6>
+                <div class="article-box-footer">
+                    <span class="footer-green"><a href="#">Boxing<a/></span>
+                </div>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-sm-3 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/whyte.jpg" alt="Two boxers fighting">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Whyte to fight in December</h6>
+                <div class="article-box-footer">
+                    <span class="footer-green"><a href="#">Boxing<a/></span>
+                </div>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-sm-3 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/england-football.jpg" alt="Four England football players">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>England to face Denmark in friendly as Euro 2020 warm-up</h6>
+                <div class="article-box-footer">
+                    <span class="footer-green"><a href="#">Football<a/></span>
+                </div>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-sm-3 article-box sm-breakpoint-below-no-border">
+            <div class="row sm-breakpoint-below-padding-bottom">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/france.jpg" alt="Two French Davis cup tennis players">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>France survive scare to beat Japan at Davis Cup</h6>
+                <div class="article-box-footer">
+                    <span class="footer-green"><a href="#">Tennis<a/></span>
+                </div>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+        </div>
+        <hr class="sm-breakpoint-below-padding-bottom">
+      <!-- Main section - left column (second) - closing div -->
+      </div>
+
+      <!--
+        | Main section - right column (second) - watch and listen section |
+      -->
+      <div class="main-right-watch-listen col-lg-3">
+        <h2>Watch and listen</h2>
+        <div class="row watch-listen-parent-row">
+          <div class="col-lg-6 col-sm-8 watch-listen-fa-cup">
+            <a href="#" class="div-anchor"></a>
+            <img class="sm-breakpoint-below-padding-bottom" src="media/bbc/fa-cup.jpg" alt="FA Cup trophy">
+          </div>
+          <div class="col-lg-6 col-sm-4 watch-listen-fa-cup small-screen-border-bottom">
+            <h5 class="fa-cup-text">How to follow the FA cup on the BBC - and when's the second round draw?</h5>
+            <a href="#" class="div-anchor"></a>
+          </div>
+          <div class="col-lg-12 col-sm-4">
+            <div class="row watch-listen-row">
+              <div class="col-lg-6 col-sm-12 col-6 watch-listen-box">
+                <div class="image-wrapper">
+                  <div class="play-icon-box">
+                    <a href="#" class="div-anchor"><i class="fas fa-volume-up play-icon"></i></a>
+                  </div>
+                  <a href="#" class="div-anchor"></a>
+                  <img src="media/bbc/rugby-lions.jpg" alt="Lions rugby team">
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 col-6 watch-listen-box">
+                <h5>5 Live Rugby League podcast: Do the Lions have a future?</h5>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-lg-12 col-sm-4">
+            <div class="row watch-listen-row">
+              <div class="col-lg-6 col-sm-12 col-6 watch-listen-box">
+                <div class="image-wrapper">
+                  <div class="play-icon-box">
+                    <a href="#" class="div-anchor"><i class="fas fa-volume-up play-icon"></i></a>
+                  </div>
+                  <a href="#" class="div-anchor"></a>
+                  <img src="media/bbc/motd.jpg" alt="Two footballers squaring up to each other">
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 col-6 watch-listen-box">
+                <h5>Watch Match of the Day on BBC iPlayer</h5>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-lg-12 col-sm-4">
+            <div class="row watch-listen-row">
+              <div class="col-lg-6 col-sm-12 col-6 watch-listen-box">
+                <div class="image-wrapper">
+                  <div class="play-icon-box">
+                    <a href="#" class="div-anchor"><i class="fas fa-volume-up play-icon"></i></a>
+                  </div>
+                  <a href="#" class="div-anchor"></a>
+                  <img src="media/bbc/robert-enke.jpg" alt="Robert Enke">
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 col-6 watch-listen-box">
+                <h5>Sportsworld: Robert Enke - lessons learned from a life too short</h5>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-lg-12 col-sm-4">
+            <div class="row watch-listen-row">
+              <div class="col-lg-6 col-sm-12 col-6 watch-listen-box">
+                <img src="media/bbc/albon.jpg" alt="Formula One car">
+              </div>
+              <div class="col-lg-6 col-sm-12 col-6 watch-listen-box">
+                <h5>Chequered Flag: 'Albon is not very close to Verstappen'</h5>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-lg-12 col-sm-4">
+            <div class="row watch-listen-row">
+              <div class="col-lg-6 col-sm-12 col-6 watch-listen-box">
+                <div class="image-wrapper">
+                  <div class="play-icon-box">
+                    <a href="#" class="div-anchor"><i class="fas fa-volume-up play-icon"></i></a>
+                  </div>
+                  <a href="#" class="div-anchor"></a>
+                  <img src="media/bbc/bale.jpg" alt="Welsh footballer Gareth Bale celebrating">
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 col-6 watch-listen-box">
+                <h5>Football Daily: Bale's Wales excitement, free agents and will Abraham challenge Kane?</h5>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-lg-12 col-sm-4">
+            <div class="row watch-listen-row">
+              <div class="col-lg-6 col-sm-12 col-6 watch-listen-box sm-breakpoint-below-padding-bottom">
+                <div class="image-wrapper">
+                  <div class="play-icon-box">
+                    <a href="#" class="div-anchor"><i class="fas fa-volume-up play-icon"></i></a>
+                  </div>
+                  <a href="#" class="div-anchor"></a>
+                  <img src="media/bbc/sportshour.jpg" alt="Manchester United manager Casey Stoney">
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12 col-6 watch-listen-box">
+                <h5>Sportshour: 'Women should have the same opportunities'</h5>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+        </div>
+        <hr class="sm-to-lg-display-only">
+      </div>
+
+      <!--
+        Main section - left column (third)- large article & accompanying small articles (las-articles)
+        'in case you missed it' section
+      -->
+      <div class="col-lg-9 col-md-12">
+        <h2>In case you missed it</h2>
+        <div class="row">
+          <div class="col-xl-6 col-lg-12 las-articles-wrapper">
+            <div class="row">
+              <div class="col-xl-12 col-sm-6 in-case-you-missed-image-wrapper">
+                <a href="#" class="div-anchor"></a>
+                <img src="media/bbc/mourinho.jpg" alt="Football manager Jose Mourinho">
+              </div>
+              <div class="col-xl-12 col-sm-6 las-articles-headline-column in-case-you-missed-text-wrapper">
+                <a href="#" class="div-anchor"></a>
+                <h5 class="in-case-you-missed-headline">'It will be pure theatre' - which Mourinho will Spurs get and is he the right man?</h5>
+                <p class="sm-breakpoint-below-hide">As Jose Mourinho returns to Premier League management, BBC Sport's Phil McNulty looks at whether the Portuguese is the right fit for Tottenham.</p>
+                <div class="article-box-footer">
+                  <span class="footer-green footer-border"><a href="#">Tennis</a></span>
+                  <span><i class="fas fa-comment-alt"></i>1208</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- las-small articles -->
+          <div class="col-xl-6 col-lg-12">
+            <div class="row margin-bottom-xl-up">
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/dutch-football.jpg" alt="Three dutch footballers">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>Dutch footballers will not play in first minute of matches in racism protest</h6>
+                    <div class="article-box-footer">
+                      <span class="footer-green"><a href="#">European Football</a></span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/bale2.jpg" alt="Welsh footballes celebrating behind Welsh flag">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>'Wales. Golf. Madrid. In that order - Bale risks further rift with Real</h6>
+                    <div class="article-box-footer">
+                      <span class="footer-green footer-border"><a href="#">Football</a></span>
+                      <span><i class="fas fa-comment-alt"></i>675</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/sibley.jpg" alt="England cricketer Dom Sibley">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>A hip hop fan but hopeless with a vacuum cleaner - who is England new boy Sibley?</h6>
+                    <div class="article-box-footer">
+                        <span class="footer-green"><a href="#">Cricket</a></span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+            </div>
+            <div class="row bottom-row-margin">
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/balague.jpg" alt="BBC Sport columnist Guillem Balague">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>'Sacking may be liberating for Pochettino'</h6>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/poch.jpg" alt="Football manager Pochettino and Tottenham owner Daniel Levy">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>An 'extraordinary sacking - but the right decision?'</h6>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+              <div class="col-sm-4 small-article-box sm-breakpoint-below-no-border">
+                <div class="row sm-breakpoint-below-padding-bottom">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/euro-96.png" alt="Four footballers celebrating and a mascot">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>Ronaldo and echoes of '96 - reasons to get excited for Euro 2020</h6>
+                    <div class="article-box-footer">
+                      <span class="footer-green"><a href="#">European Football</a></span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="sm-breakpoint-below-padding-bottom">
+
+        <!--
+          | Main section - left column (third) - around the UK section |
+        -->
+        <h2>Around the UK</h2>
+        <div class="row four-box-row">
+          <div class="col-sm-3 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/football-hate.jpg" alt="Football stadium at night during match">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Football hate crime reports up by 66%</h6>
+                <div class="article-box-footer">
+                  <span class="footer-green"><a href="#">England</a></span>
+                </div>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-sm-3 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/scotland-teams.jpg" alt="Four pictures of footballers">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Who are the four teams Scotland could face?</h6>
+                <div class="article-box-footer">
+                  <span class="footer-green"><a href="#">Scotland</a></span>
+                </div>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-sm-3 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/bale3.jpg" alt="Spanish newspapers' front pages">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Bale 'unworthy of Madrid' - Spanish press</h6>
+                <div class="article-box-footer">
+                  <span class="footer-green"><a href="#">Wales</a></span>
+                </div>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-sm-3 article-box sm-breakpoint-below-no-border">
+            <div class="row sm-breakpoint-below-padding-bottom">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/lorenzo-vera.jpg" alt="Golfer Lorenzo-Vera holding a golf club">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>McIlroy lies one behind Lorenzo-Vera after Dubai first round</h6>
+                <div class="article-box-footer">
+                  <span class="footer-green"><a href="#">Northern Ireland</a></span>
+                </div>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+        </div>
+        <hr class="sm-breakpoint-below-padding-bottom">
+        <!--
+            | Main section - left column (third) - get inspired section |
+        -->
+        <h2>Get inspired</h2>
+        <div class="row four-box-row">
+          <div class="col-sm-3 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/womens-rugby.jpg" alt="Women's rugby players">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Follow Kalisi: How to get into Rugby Union</h6>
+                <div class="article-box-footer">
+                  <span class="footer-green"><a href="#">Get inspired</a></span>
+                </div>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-sm-3 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <div class="image-wrapper">
+                  <div class="play-icon-box">
+                    <a href="#" class="div-anchor"><i class="fas fa-volume-up play-icon"></i></a>
+                  </div>
+                  <img src="media/bbc/coxsey.jpg" alt="Gymnast Shauna Coxsey">
+                </div>
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Shauna Coxsey's core conditioning routine</h6>
+                <div class="article-box-footer">
+                  <span class="footer-green"><a href="#">Get inspired</a></span>
+                </div>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-sm-3 article-box">
+            <div class="row">
+              <div class="col-sm-12 col-6">
+                <img src="media/bbc/cricket.jpg" alt="Cricket batter hitting a shot">
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Feeling the Draft: How to get into cricket</h6>
+                <div class="article-box-footer">
+                  <span class="footer-green"><a href="#">Get inspired</a></span>
+                </div>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+          <div class="col-sm-3 article-box sm-breakpoint-below-no-border">
+            <div class="row sm-breakpoint-below-padding-bottom">
+              <div class="col-sm-12 col-6">
+                <div class="image-wrapper">
+                  <div class="play-icon-box">
+                    <a href="#" class="div-anchor"><i class="fas fa-volume-up play-icon"></i></a>
+                  </div>
+                  <img src="media/bbc/5k.jpg" alt="Man running and Couch to 5k symbol">
+                </div>
+              </div>
+              <div class="col-sm-12 col-6">
+                <h6>Get running in just nine weeks with Couch to 5K</h6>
+                <div class="article-box-footer">
+                  <span class="footer-green"><a href="#">Get inspired</a></span>
+                </div>
+              </div>
+              <a href="#" class="div-anchor"></a>
+            </div>
+          </div>
+        </div>
+        <hr class="sm-breakpoint-below-padding-bottom">
+        <!--
+          Main section - left column (third)- large article & accompanying small articles (las-articles)
+          'Insight' section
+        -->
+        <h2>Insight</h2>
+        <div class="row">
+          <div class="col-xl-6 col-lg-12 las-articles-wrapper">
+            <div class="row">
+              <div class="col-xl-12 col-sm-6 insight-image-wrapper">
+                <a href="#" class="div-anchor"></a>
+                <img src="media/bbc/kipchoge.png" alt="Long distance runne Kipchoge">
+              </div>
+              <div class="col-xl-12 col-sm-6 las-articles-headline-column insight-text-wrapper">
+                <a href="#" class="div-anchor"></a>
+                <h5 class="insight-headline">How Kipchoge made sporting history: The inside story</h5>
+                <p class="sm-breakpoint-below-hide">Eliud Kipchoge made history in October by becoming the first person to run a marathon in under two hours. Here's how he did it.</p>
+              </div>
+            </div>
+          </div>
+          <!-- las-small articles -->
+          <div class="col-xl-6 col-lg-12">
+            <div class="row margin-bottom-xl-up">
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/spiksley.png" alt="English footballer Fred Spiksley">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>The forgotten England star who acted with Charlie Chaplin</h6>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/olympic.png" alt="Child playing cricket in street">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>The Olympic venue recovering from Nuclear disaster</h6>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/east-berlin.png" alt="The Berlin Wall">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>The footballers who escaped East Berlin</h6>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+            </div>
+            <div class="row bottom-row-margin">
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/kolisi.png" alt="South African rugby captain Kolisi">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>The 'unique story' of South Africa's first black captain</h6>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+              <div class="col-sm-4 small-article-box">
+                <div class="row">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/kid-race.png" alt="Child on horseback">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>'A Muslim kid in a race? I'd be like: "Keep going girl!'</h6>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+              <div class="col-sm-4 small-article-box sm-breakpoint-below-no-border">
+                <div class="row sm-breakpoint-below-padding-bottom">
+                  <div class="col-sm-12 col-6">
+                    <img src="media/bbc/helicopter.png" alt="Helicopter above floodlights">
+                  </div>
+                  <div class="col-sm-12 col-6">
+                    <h6>A tragedy that stunned football - told by those who were there</h6>
+                  </div>
+                </div>
+                <a href="#" class="div-anchor"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="sm-breakpoint-below-padding-bottom">
+        <!--
+            | Main section - left column (third) - find us here section |
+        -->
+        <h2>Find us here</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="row social-row-left">
+              <div class="twitter">
+                <a href="#"><i class="social-icon fab fa-twitter"></i></a>
+              </div>
+              <div class="facebook">
+                <a href="#"><i class="social-icon fab fa-facebook-square"></i></a>
+              </div>
+              <div class="instagram">
+                <a href="#"><i class="social-icon fab fa-instagram"></i></a>
+              </div>
+              <div class="youtube">
+                <a href="#"><i class="social-icon fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row social-row-right">
+              <div class="find-us-here-box">
+                <a href="#" class="div-anchor"></a>
+                <img class="bbc-sport-cube" src="media/bbc/bbc-sport.png" alt="BBC sport logo">
+                <p>Find out more about our BBC Sport App</p>
+              </div>
+              <div class="find-us-here-box">
+                <p id="find-us-here-faq"><a href="#">Help & FAQs</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- closing div for Main section - left column (third) -->
+      </div>
+    </div>
+    <!-- closing div for Main section parent container -->
+  </div>
+
+  <!--
+      | War of the worlds section |
+  -->
+    <div class="container-fluid war-worlds-container">
+      <h5 class="war-worlds-heading">The War of the Worlds</h5>
+      <div class="row war-worlds-row">
+        <div class="war-worlds-box col-md-3 col-auto">
+          <img src="media/bbc/war-worlds-one.jpg" alt="Alien ship & BBC logo">
+          <div class="war-worlds-box-lower">
+            <h5>Stream the thrilling first episode now</h5>
+            <span>BBC IPLAYER</span>
+          </div>
+          <a href="#" class="div-anchor"></a>
+        </div>
+        <div class="war-worlds-box col-md-3 col-auto">
+          <img src="media/bbc/re-imagining.jpg" alt="">
+          <div class="war-worlds-box-lower">
+            <h5>Re-imagining the War of the Worlds</h5>
+            <span>BBC BITESIZE</span>
+          </div>
+          <a href="#" class="div-anchor"></a>
+        </div>
+        <div class="war-worlds-box col-md-3 col-auto">
+          <img src="media/bbc/war-worlds-two.jpg" alt="">
+          <div class="war-worlds-box-lower">
+            <h5>Cast and characters: Who's who?</h5>
+            <span>BBC ONE</span>
+          </div>
+          <a href="#" class="div-anchor"></a>
+        </div>
+        <div class="war-worlds-box col-md-3 col-auto">
+          <img src="media/bbc/hg-wells.jpg" alt="">
+          <div class="war-worlds-box-lower">
+            <h5>Listen to HG Wells' audio book</h5>
+            <span>BBC SOUNDS</span>
+          </div>
+          <a href="#" class="div-anchor"></a>
+        </div>
+      </div>
+    </div>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row footer-list-row">
+        <ul class="footer-list">
+          <a href="#"><li class="footer-li">Home</li></a>
+          <a href="#"><li class="footer-li">CBBC</li></a>
+          <a href="#"><li class="footer-li no-padding-bt-lg-up">Local</li></a>
+          <a href="#"><li class="footer-li">News</li></a>
+          <a href="#"><li class="footer-li">CBeebies</li></a>
+          <a href="#"><li class="footer-li no-padding-bt-lg-up">TV</li></a>
+          <a href="#"><li class="footer-li">Sport</li></a>
+          <a href="#"><li class="footer-li">Food</li></a>
+          <a href="#"><li class="footer-li no-padding-bt-lg-up">Radio</li></a>
+          <a href="#"><li class="footer-li">Weather</li></a>
+          <a href="#"><li class="footer-li">Bitesize</li></a>
+          <a href="#"><li class="footer-li no-padding-bt-lg-up">Three</li></a>
+          <a href="#"><li class="footer-li no-border-right-lg-down">iPlayer</li></a>
+          <a href="#"><li class="footer-li no-border-right-lg-down">Arts</li></a>
+          <a href="#"><li class="footer-li no-padding-bt-lg-up no-border-right-lg-down">Sounds</li></a>
+          <a href="#"><li class="footer-li no-padding-bt-lg-up padding-rt-lg-up footer-no-border">Taster</li></a>
+        </ul>
+      </div>
+      <div class="row">
+        <ul class="footer-anchors-list">
+          <a href="#"><li>Terms of Use</li></a>
+          <a href="#"><li>About the BBC</li></a>
+          <a href="#"><li>Privacy Policy</li></a>
+          <a href="#"><li>Cookies</li></a>
+          <a href="#"><li>Accessibility Help</li></a>
+          <a href="#"><li>Parental Guidance</li></a>
+          <a href="#"><li>Contact the BBC</li></a>
+          <a href="#"><li>Get Personalised Newsletters</li></a>
+        </ul>
+      </div>
+        <p class="copyright-bbc"><span>Copyright @ 2019 BBC. </span>The BBC is not responsible for the content of external sites. <a href="#"><span>Read about our approach to external linking.</span></a></p>
+    </div>
+  </footer>
+  <script src="scripts/bbc.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,945 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Project showcasing 2022/2023 school year Javascript calendar, built by Adam Fox" />
+  <title>School term dates - City of York Council</title>
+  <link rel="icon" type="image/x-icon" href="media/af-favicon.png">
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/calendar.css">
+  </head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-sm">
+    <a class="navbar-brand hover-stroke" href="index.html">Adam Fox Web Development</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></ul>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link hover-stroke" href="index.html">Home</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h2>2022 to 2023 school term dates</h2>
+  <div class="calendar__key--wrapper">
+    <div id="calendar__key--label">
+      <span>Key</span>
+    </div>
+    <div class="calendar__key--row">
+      <div><span>Term dates</span></div>
+      <div id="calendar__key-type--term"></div>
+    </div>
+    <div class="calendar__key--row">
+      <div><span>Holidays</span></div>
+      <div class="calendar__type--school-holiday"></div>
+    </div>
+    <div class="calendar__key--row">
+      <div><span>Bank Holidays</span></div>
+      <div class="calendar__type--bank-holiday"></div>
+    </div>
+  </div>
+  <div id="calendar">
+    <div class="calendar__month--wrapper">
+      <div class="calendar__month--label">
+        <span>September</span>
+      </div>
+      <table id="september">
+        <thead>
+          <tr>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Tu</th>
+            <th>Fr</th>
+            <th>Sa</th>
+            <th>Su</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     <div class="calendar__month--wrapper">
+      <div class="calendar__month--label">
+        <span>October</span>
+      </div>
+      <table id="october">
+        <thead>
+          <tr>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Tu</th>
+            <th>Fr</th>
+            <th>Sa</th>
+            <th>Su</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="calendar__month--wrapper">
+      <div class="calendar__month--label">
+        <span>November</span>
+      </div>
+      <table id="november">
+        <thead>
+          <tr>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+            <th>Su</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     <div class="calendar__month--wrapper">
+      <div class="calendar__month--label">
+        <span>December</span>
+      </div>
+      <table id="december">
+        <thead>
+          <tr>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+            <th>Su</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="calendar__month--wrapper">
+      <div class="calendar__month--label">
+        <span>January</span>
+      </div>
+      <table id="january">
+        <thead>
+          <tr>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+            <th>Su</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     <div class="calendar__month--wrapper">
+      <div class="calendar__month--label">
+        <span>February</span>
+      </div>
+      <table id="february">
+        <thead>
+          <tr>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+            <th>Su</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      <div class="calendar__month--wrapper">
+      <div class="calendar__month--label">
+        <span>March</span>
+      </div>
+      <table id="march">
+        <thead>
+          <tr>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+            <th>Su</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     <div class="calendar__month--wrapper">
+      <div class="calendar__month--label">
+        <span>April</span>
+      </div>
+      <table id="april">
+        <thead>
+          <tr>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+            <th>Su</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     <div class="calendar__month--wrapper">
+      <div class="calendar__month--label">
+        <span>May</span>
+      </div>
+      <table id="may">
+        <thead>
+          <tr>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+            <th>Su</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="calendar__month--wrapper">
+      <div class="calendar__month--label">
+        <span>June</span>
+      </div>
+      <table id="june">
+        <thead>
+          <tr>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+            <th>Su</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="calendar__month--wrapper">
+      <div class="calendar__month--label">
+        <span>July</span>
+      </div>
+      <table id="july">
+        <thead>
+          <tr>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+            <th>Su</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="calendar__month--wrapper">
+      <div class="calendar__month--label">
+        <span>August</span>
+      </div>
+      <table id="august">
+        <thead>
+          <tr>
+            <th>Mo</th>
+            <th>Tu</th>
+            <th>We</th>
+            <th>Th</th>
+            <th>Fr</th>
+            <th>Sa</th>
+            <th>Su</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="calendar__type--weekend"></td>
+            <td class="calendar__type--weekend"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- Bootstrap scripts -->
+  <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossorigin='anonymous'></script>
+  <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'></script>
+  <script src="scripts/calendar.js"></script>
+</body>
+</html>
