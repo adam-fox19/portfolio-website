@@ -1,4 +1,3 @@
-
 // adds hoverClass to all instances of articleBox
 function addHoverClasses(articleBox, hoverClass) {
   let arr = document.querySelectorAll('.' + articleBox)
