@@ -8,7 +8,7 @@ var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options
   wrapAround:true,
-  friction: 0.6,
+  friction: 0.3,
   selectedAttraction: 0.02,
   imagesLoaded: true,
   watchCSS: true
