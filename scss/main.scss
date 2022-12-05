@@ -72,7 +72,7 @@ h4 {
 .highlight-wrapper {
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: $main-theme-light-gray;;
+  background-color: $main-theme-light-gray;
   border-bottom: $main-theme-border;
   border-top: $main-theme-border;
 }
@@ -154,13 +154,13 @@ h4 {
 }
 .content-box--wrapper {
   margin-bottom: 15px;
-  border-right: $main-theme-border;
 }
 @media only screen and (min-width: 768px) {
   .content-box--wrapper {
     margin-bottom: 0;
     padding-left: 30px;
     padding-right: 30px;
+    border-right: $main-theme-border;
   }
 }
 .content-box--image-wrapper img {
